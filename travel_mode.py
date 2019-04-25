@@ -55,10 +55,10 @@ def travelEvent(game):
 
 def campScreen(game):
 
-    # nightCamp(game)
+    nightCamp(game)
     game.day += 1
     game.time = 7
-    # morningCamp(game)
+    morningCamp(game)
     print('you slept a night at camp')
 
 def nightCamp(game):

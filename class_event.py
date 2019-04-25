@@ -585,6 +585,17 @@ class JobEvent(Event):
                         jobIndex = 0
             cfg.DISPLAYSURF.blit(nextSurf, nextRect)
 
+            prevSurf = cfg.IMAGEDICT['Left One']
+            prevRect = prevSurf.get_rect()
+            prevRect.midleft = (20, cfg.WINHEIGHT / 2)
+            if prevRect.collidepoint(cfg.mouseX, cfg.mouseY) and not cfg.hudMenu:
+                prevSurf = cfg.IMAGEDICT['Left Two']
+                if cfg.mouseClicked:
+                    jobIndex -= 1
+                    if jobIndex < 0:
+                        jobIndex = len(self.availableJobs) - 1
+            cfg.DISPLAYSURF.blit(prevSurf, prevRect)
+
             game._displayHud()
 
             pygame.display.update()

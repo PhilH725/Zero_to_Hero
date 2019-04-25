@@ -136,8 +136,8 @@ riverwood_inn_guy.text = [
 ]
 
 riverwood_huntsman_quartermaster = class_event.TextEvent()
-riverwood_huntsman_quartermaster.displayName = 'Huntsman Quartermaster'
-riverwood_huntsman_quartermaster.charName = 'Huntsman Quartermaster'
+riverwood_huntsman_quartermaster.displayName = 'Huntsman QM'
+riverwood_huntsman_quartermaster.charName = 'Hunt QM'
 riverwood_huntsman_quartermaster.image = pygame.image.load('images/avi/huntsman.png')
 riverwood_huntsman_quartermaster.reqs = {'Bear Hunt': [0]}
 riverwood_huntsman_quartermaster.progression = {'Bear Hunt': 1}
@@ -151,8 +151,8 @@ riverwood_huntsman_quartermaster.text = [
 ]
 
 riverwood_huntsman_quartermaster_two = class_event.TextEvent()
-riverwood_huntsman_quartermaster_two.displayName = 'Huntsman Quartermaster'
-riverwood_huntsman_quartermaster_two.charName = 'Huntsman Quartermaster'
+riverwood_huntsman_quartermaster_two.displayName = 'Huntsman QM'
+riverwood_huntsman_quartermaster_two.charName = 'Hunt QM'
 riverwood_huntsman_quartermaster_two.image = pygame.image.load('images/avi/huntsman.png')
 riverwood_huntsman_quartermaster_two.reqs = {'Bear Hunt': [1]}
 riverwood_huntsman_quartermaster_two.text = [

@@ -352,9 +352,9 @@ def updateClassChoiceInfo(className):
         miscStats = {'Charisma': 40, 'Stealth': 30, 'Speed': 40}
         classDescription = [
             "Masters of sword and magic, red mages" ,
-            "have some of the highest potential for combat." ,
-            "With that potential comes the cost of a much" ,
-            "tougher to grasp art."
+            "have some of the highest potential for" ,
+            "combat. With that potential comes the" ,
+            "cost of a tougher to grasp art."
         ]
         confirmMessage = "You want to be a Red Mage?"
 

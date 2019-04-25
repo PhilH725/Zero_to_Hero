@@ -69,7 +69,7 @@ class Hub():
                     y = nameBackRect.bottom + 20
 
             #special hub options (access jobs available from that hub or the world map)
-            pygame.draw.line(cfg.DISPLAYSURF, cfg.BLUE, (5, 480), (cfg.WINWIDTH - 5, 480), 2)
+            # pygame.draw.line(cfg.DISPLAYSURF, cfg.BLUE, (5, 490), (cfg.WINWIDTH - 5, 490), 2)
 
             hubJobs = []
             for i in game.activeJobs:
