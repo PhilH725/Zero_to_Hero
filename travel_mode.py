@@ -70,7 +70,8 @@ def nightCamp(game):
         cfg.DISPLAYSURF.blit(cfg.IMAGEDICT['Camp - Night'], (0,0))
         game._displayHud()
 
-        optionBackSurf = pygame.Surface((200, 50))
+        optionBackSurf = pygame.Surface((240, 60))
+        optionBackSurf.set_alpha(140)
         optionBackRect = optionBackSurf.get_rect()
         optionBackRect.topleft = (100, 100)
         sleepSurf = cfg.BASICFONT.render('Sleep', True, cfg.WHITE)
@@ -78,10 +79,13 @@ def nightCamp(game):
         sleepRect.midleft = (optionBackRect.left + 15, optionBackRect.centery)
         if optionBackRect.collidepoint(cfg.mouseX, cfg.mouseY):
             sleepSurf = cfg.BASICFONT.render('Sleep', True, cfg.RED)
+            optionBackSurf.fill(cfg.BLUE)
+            optionBackSurf.set_alpha(55)
             if cfg.mouseClicked:
                 common_functions.fadeout(speed=15)
                 return
         cfg.DISPLAYSURF.blit(optionBackSurf, optionBackRect)
+        pygame.draw.rect(cfg.DISPLAYSURF, cfg.WHITE, optionBackRect, 2)
         cfg.DISPLAYSURF.blit(sleepSurf, sleepRect)
 
         pygame.display.update()
@@ -106,7 +110,8 @@ def morningCamp(game):
         cfg.DISPLAYSURF.blit(cfg.IMAGEDICT['Camp - Day'], (0,0))
         game._displayHud()
 
-        optionBackSurf = pygame.Surface((200, 50))
+        optionBackSurf = pygame.Surface((240, 60))
+        optionBackSurf.set_alpha(140)
         optionBackRect = optionBackSurf.get_rect()
         optionBackRect.bottomright = (600, 400)
         resumeSurf = cfg.BASICFONT.render('Resume Trip', True, cfg.WHITE)
@@ -114,10 +119,13 @@ def morningCamp(game):
         resumeRect.midleft = (optionBackRect.left + 15, optionBackRect.centery)
         if optionBackRect.collidepoint(cfg.mouseX, cfg.mouseY):
             resumeSurf = cfg.BASICFONT.render('Resume Trip', True, cfg.RED)
+            optionBackSurf.fill(cfg.BLUE)
+            optionBackSurf.set_alpha(55)
             if cfg.mouseClicked:
                 common_functions.fadeout(7)
                 return
         cfg.DISPLAYSURF.blit(optionBackSurf, optionBackRect)
+        pygame.draw.rect(cfg.DISPLAYSURF, cfg.WHITE, optionBackRect, 2)
         cfg.DISPLAYSURF.blit(resumeSurf, resumeRect)
 
         pygame.display.update()
