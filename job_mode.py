@@ -25,7 +25,7 @@ def jobFunction(game, job):
 def beforeJob(game):
 
     message = [
-    "You arrive ready to start whatever this job is..."
+    "You arrive ready to work on this contract..."
     ]
     while True:
 

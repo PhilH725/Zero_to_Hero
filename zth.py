@@ -20,7 +20,7 @@ def main():
 
     pygame.display.set_caption('Zero to Hero V2')
 
-    #title_screen.titleScreen()
+    title_screen.titleScreen()
     game = main_menu.mainMenuScreen()
     playGame(game)
 

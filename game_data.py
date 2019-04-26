@@ -54,13 +54,17 @@ mission_four.hub = "Ivarstead"
 mission_four.description = []
 mission_four.rewards = {'Gold': 200}
 
-bandit_hunt = class_job.Job('Bandit Hunt')
+bandit_hunt = class_job.Job('Trade Route Protection')
 bandit_hunt.reqs = {'Power': 60}
+bandit_hunt.hub = 'Kvatch'
 bandit_hunt.distance = 5
+bandit_hunt.allowedTime = 10
+bandit_hunt.contact = "Kvatch Guard Captain"
 bandit_hunt.description = [
-    "Hunt bandits."
+    "Highwaymen have been attacking merchants and caravans on the road",
+    "West of Kvatch. Help secure the road and deal with these troublemakers.",
 ]
-bandit_hunt.rewards = {'Gold': 200, 'Copper Sword': ''}
+bandit_hunt.rewards = {'Gold': 250, 'Copper Sword': ''}
 
 JOBLIST = [bear_hunt, bandit_hunt, mission_one, mission_two, mission_three, mission_four]
 
@@ -81,7 +85,7 @@ amanda_main.charName = 'Amanda'
 amanda_main.image = pygame.image.load('images/avi/amanda.png')
 amanda_main.text = [
     ["Hello, Phil. I trust you're keeping your skills sharp. I have a lot of" ,
-    "new contracts coming in, there's room for advancement... if you" ,
+    "new contracts coming in. There's room for advancement... if you" ,
     "can handle it."]
 ]
 

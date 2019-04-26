@@ -17,6 +17,7 @@ def titleScreen():
     backgroundImageTwo = pygame.image.load('images/title/title2.png')
 
     titleBackSurf = pygame.Surface((780, 100))
+    titleBackSurf.set_alpha(45)
     titleBackRect = titleBackSurf.get_rect()
     titleBackRect.topleft = (10, 10)
 
@@ -32,10 +33,10 @@ def titleScreen():
 
         common_functions.standardEventHandling()
 
-        if timer > 40 and timer < 60:
-            cfg.DISPLAYSURF.blit(backgroundImageTwo, (0,0))
-        else:
-            cfg.DISPLAYSURF.blit(backgroundImageOne, (0,0))
+        # if timer > 40 and timer < 60:
+            # cfg.DISPLAYSURF.blit(backgroundImageTwo, (0,0))
+        # else:
+        cfg.DISPLAYSURF.blit(backgroundImageOne, (0,0))
 
         cfg.DISPLAYSURF.blit(titleBackSurf, titleBackRect)
         cfg.DISPLAYSURF.blit(titleSurf, titleRect)
